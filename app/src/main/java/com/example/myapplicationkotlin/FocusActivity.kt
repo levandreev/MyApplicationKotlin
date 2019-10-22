@@ -1,5 +1,6 @@
 package com.example.myapplicationkotlin
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -138,6 +139,15 @@ class FocusActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_focus)
 
+        focus_button.setImageState(Activity.FOCUSED_STATE_SET, true)
+
+        meditation_button.setOnClickListener{
+            startActivity(Intent(this@FocusActivity,MeditationActivity::class.java))
+        }
+
+        s_p_button.setOnClickListener{
+            startActivity(Intent(this@FocusActivity,SPActivity::class.java))
+        }
 
     }
 }

@@ -5,15 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0099cc"
-    tools:context=".SPActivity">
+    tools:context=".MeditationActivity">
 
     <ImageButton
         android:id="@+id/focus_button"
         android:layout_width="111dp"
         android:layout_height="107dp"
         android:layout_marginBottom="40dp"
-        android:background="@drawable/button_selector"
         android:contentDescription="@string/desc"
+        android:background="@drawable/button_selector"
+
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/meditation_button"
         app:layout_constraintEnd_toEndOf="@+id/meditation_button"
@@ -22,10 +23,12 @@
     <ImageButton
         android:id="@+id/s_p_button"
         android:layout_width="111dp"
+
         android:layout_height="107dp"
         android:layout_marginBottom="32dp"
-        android:background="@drawable/button_selector"
         android:contentDescription="@string/desc"
+        android:background="@drawable/button_selector"
+
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/focus_button"
         app:layout_constraintEnd_toEndOf="@+id/focus_button"
@@ -37,32 +40,11 @@
         android:layout_height="107dp"
         android:layout_marginStart="44dp"
         android:layout_marginBottom="92dp"
-        android:background="@drawable/button_selector"
         android:contentDescription="@string/desc"
+        android:background="@drawable/button_selector"
+
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/meditation_button" />
-
-    <ProgressBar
-        android:id="@+id/progressBar2"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="204dp"
-        android:layout_height="79dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/progressBar3"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ProgressBar
-        android:id="@+id/progressBar3"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="187dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="36dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar2"
-        app:layout_constraintVertical_bias="0.003" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

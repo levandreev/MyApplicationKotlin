@@ -3,6 +3,9 @@
     <string name="desc">A description</string>
 
     <string name="title_activity_focus">FocusActivity</string>
+    <string name="title_activity_meditation">MeditationActivity</string>
+    <string name="title_activity_sp">SPActivity</string>
+
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
 

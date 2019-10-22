@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
 
         start_button.setOnClickListener{
-            startActivity(Intent(this@MainActivity,FocusActivity::class.java))
+            startActivity(Intent(this@MainActivity,SPActivity::class.java))
         }
 
         exit_button.setOnClickListener{
