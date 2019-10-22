@@ -2,10 +2,9 @@ package com.example.myapplicationkotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Window
-import android.widget.Toast.LENGTH_LONG
-import android.widget.Toast.makeText
 import kotlinx.android.synthetic.main.activity_main.*
+import android.content.Intent
+import kotlin.system.exitProcess
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,9 +13,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-//        my_button1.setOnClickListener{
-//            makeText(this, "You clicked the button", LENGTH_LONG).show()
-//        }
+
+        start_button.setOnClickListener{
+            startActivity(Intent(this@MainActivity,FocusActivity::class.java))
+        }
+
+        exit_button.setOnClickListener{
+            exitProcess(-1)
+        }
+
     }
 
 

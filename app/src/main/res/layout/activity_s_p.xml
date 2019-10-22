@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".FocusActivity">
+
+    <ImageButton
+        android:id="@+id/focus_button"
+        android:layout_width="111dp"
+        android:layout_height="107dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="@string/desc"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/meditation_button"
+        app:layout_constraintEnd_toEndOf="@+id/meditation_button"
+        app:srcCompat="@drawable/focus_button" />
+
+    <ImageButton
+        android:id="@+id/s_p_button"
+        android:layout_width="111dp"
+
+        android:layout_height="107dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/desc"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/focus_button"
+        app:layout_constraintEnd_toEndOf="@+id/focus_button"
+        app:srcCompat="@drawable/p_s_button" />
+
+    <ImageButton
+        android:id="@+id/meditation_button"
+        android:layout_width="111dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="92dp"
+        android:contentDescription="@string/desc"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/meditation_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
