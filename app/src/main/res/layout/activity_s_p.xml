@@ -4,25 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0099cc"
+    android:background="@drawable/app_background_screen"
     tools:context=".SPActivity">
 
-    <SeekBar
-        android:id="@+id/seekBar3"
-        android:layout_width="100dp"
-        android:layout_height="49dp"
+    <TextView
+        android:id="@+id/text_number_of_focus_blocks"
+        android:layout_width="158dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/earlygameboy"
+        android:text="Number of focus blocks"
+        android:textColor="#A9A9A9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.765"
+        app:layout_constraintHorizontal_bias="0.618"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.402" />
+        app:layout_constraintVertical_bias="0.46" />
+
+    <TextView
+        android:id="@+id/number_of_focus_blocks"
+        android:layout_width="69dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="44dp"
+        android:fontFamily="@font/earlygameboy"
+        android:text="3"
+        android:textSize="32dp"
+        android:textColor="#A9A9A9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.667" />
+
+    <SeekBar
+        android:id="@+id/seekBar_blocks"
+        android:layout_width="143dp"
+        android:layout_height="91dp"
+        android:max="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.619" />
 
     <ImageButton
         android:id="@+id/focus_button"
         android:layout_width="111dp"
         android:layout_height="107dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="4dp"
         android:background="@drawable/button_selector"
         android:contentDescription="@string/desc"
         android:scaleType="fitCenter"
@@ -34,20 +66,20 @@
         android:id="@+id/s_p_button"
         android:layout_width="111dp"
         android:layout_height="107dp"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/button_selector"
+        android:layout_marginBottom="4dp"
+        android:background="@null"
         android:contentDescription="@string/desc"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/focus_button"
         app:layout_constraintEnd_toEndOf="@+id/focus_button"
-        app:srcCompat="@drawable/p_s_button" />
+        app:srcCompat="@drawable/swordicon" />
 
     <ImageButton
         android:id="@+id/meditation_button"
         android:layout_width="111dp"
         android:layout_height="107dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="92dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="156dp"
         android:background="@drawable/button_selector"
         android:contentDescription="@string/desc"
         android:scaleType="fitCenter"
@@ -84,7 +116,7 @@
         android:id="@+id/level"
         android:layout_width="66dp"
         android:layout_height="62dp"
-        android:fontFamily="@font/anton"
+        android:fontFamily="@font/earlygameboy"
         android:text="10"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -95,14 +127,46 @@
         app:layout_constraintVertical_bias="0.081" />
 
     <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="100dp"
-        android:layout_height="49dp"
+        android:id="@+id/seekBar_duration"
+        android:layout_width="143dp"
+        android:layout_height="91dp"
+        android:max="120"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.765"
+        app:layout_constraintHorizontal_bias="0.589"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262" />
+        app:layout_constraintVertical_bias="0.296" />
+
+    <TextView
+        android:id="@+id/number_block_duration"
+        android:layout_width="97dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="44dp"
+        android:fontFamily="@font/earlygameboy"
+        android:text="60"
+        android:textColor="#A9A9A9"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.339" />
+
+    <TextView
+        android:id="@+id/text_block_duration"
+        android:layout_width="153dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/earlygameboy"
+        android:text="focus block duration"
+        android:textColor="#A9A9A9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.618"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.203" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

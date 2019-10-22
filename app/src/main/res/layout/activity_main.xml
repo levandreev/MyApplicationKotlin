@@ -25,7 +25,7 @@
                 android:layout_alignParentLeft="true"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                app:srcCompat="@drawable/game_sc" />
+                app:srcCompat="@drawable/game_sc_new" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -49,32 +49,31 @@
 
                 <Button
                     android:id="@+id/start_button"
-                    android:layout_width="105dp"
-                    android:layout_height="79dp"
+                    android:layout_width="163dp"
+                    android:layout_height="60dp"
                     android:background="@android:color/transparent"
                     android:text=""
 
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.699"
+                    app:layout_constraintHorizontal_bias="0.502"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.688" />
+                    app:layout_constraintVertical_bias="0.672" />
 
                 <Button
                     android:id="@+id/exit_button"
-                    android:layout_width="92dp"
-                    android:layout_height="50dp"
+                    android:layout_width="140dp"
+                    android:layout_height="56dp"
                     android:background="@android:color/transparent"
 
                     android:contentDescription="@string/desc"
                     android:text=""
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.711"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.809" />
+                    app:layout_constraintVertical_bias="0.804" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </FrameLayout>
