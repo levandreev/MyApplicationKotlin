@@ -7,6 +7,17 @@
     android:background="#0099cc"
     tools:context=".SPActivity">
 
+    <SeekBar
+        android:id="@+id/seekBar3"
+        android:layout_width="100dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.765"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.402" />
+
     <ImageButton
         android:id="@+id/focus_button"
         android:layout_width="111dp"
@@ -50,19 +61,48 @@
         android:layout_width="204dp"
         android:layout_height="79dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/progressBar3"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ProgressBar
-        android:id="@+id/progressBar3"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="187dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar2"
-        app:layout_constraintVertical_bias="0.003" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="119dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="224dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        app:srcCompat="@drawable/button_normal" />
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:fontFamily="@font/anton"
+        android:text="10"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="100dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.765"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
