@@ -2,13 +2,19 @@ package com.example.myapplicationkotlin
 
 import android.app.Activity
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.os.Handler
 import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_focus.*
+import kotlinx.android.synthetic.main.activity_focus.focus_button
+import kotlinx.android.synthetic.main.activity_focus.meditation_button
+import kotlinx.android.synthetic.main.activity_focus.s_p_button
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_s_p.*
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -134,6 +140,7 @@ class FocusActivity : AppCompatActivity() {
 //         */
 //        private val UI_ANIMATION_DELAY = 300
 //    }
+//    lateinit var CountDownTimer: countdown
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -147,6 +154,11 @@ class FocusActivity : AppCompatActivity() {
 
         s_p_button.setOnClickListener{
             startActivity(Intent(this@FocusActivity,SPActivity::class.java))
+        }
+        countdown_button.setOnClickListener{
+            number_block_duration.text
+            Toast.makeText(this,number_block_duration.text,Toast.LENGTH_SHORT).show()
+
         }
 
     }
