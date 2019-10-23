@@ -5,46 +5,105 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/app_background_screen"
-    tools:context=".MeditationActivity">
+    tools:context=".SPActivity">
 
     <ImageButton
         android:id="@+id/focus_button"
-        android:layout_width="111dp"
-        android:layout_height="107dp"
-        android:layout_marginBottom="40dp"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@null"
         android:contentDescription="@string/desc"
-        android:background="@drawable/button_selector"
-
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/meditation_button"
         app:layout_constraintEnd_toEndOf="@+id/meditation_button"
-        app:srcCompat="@drawable/focus_button" />
+        app:srcCompat="@drawable/shieldicon" />
 
     <ImageButton
         android:id="@+id/s_p_button"
-        android:layout_width="111dp"
-
-        android:layout_height="107dp"
-        android:layout_marginBottom="32dp"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="12dp"
+        android:background="@null"
         android:contentDescription="@string/desc"
-        android:background="@drawable/button_selector"
-
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/focus_button"
         app:layout_constraintEnd_toEndOf="@+id/focus_button"
-        app:srcCompat="@drawable/p_s_button" />
+        app:srcCompat="@drawable/swordicon" />
 
     <ImageButton
         android:id="@+id/meditation_button"
-        android:layout_width="111dp"
-        android:layout_height="107dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="92dp"
+        android:layout_width="71dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="176dp"
+        android:background="@null"
         android:contentDescription="@string/desc"
-        android:background="@drawable/button_selector"
-
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/meditation_button" />
+        app:srcCompat="@drawable/meditationicon" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="213dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="16dp"
+        android:background="#800080"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="30"
+        android:progressTint="#FFA500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="106dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/earlygameboy"
+        android:text="10"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFA500"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <TextView
+        android:id="@+id/text_lvl"
+        android:layout_width="70dp"
+        android:layout_height="27dp"
+        android:fontFamily="@font/earlygameboy"
+        android:text="lvl"
+        android:textColor="#800080"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="206dp"
+        android:layout_height="115dp"
+        android:fontFamily="@font/earlygameboy"
+        android:text="meditation"
+        android:textColor="#8BD55A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
