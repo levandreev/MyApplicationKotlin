@@ -29,7 +29,9 @@ class SPActivity : AppCompatActivity() {
 
         s_p_button.setImageState(Activity.FOCUSED_STATE_SET, true)
         focus_button.setOnClickListener{
-            startActivity(Intent(this@SPActivity,FocusActivity::class.java))
+            val i = Intent(this@SPActivity,FocusActivity::class.java)
+            i.putExtra("block_dur",number_block_duration.text.toString())
+            startActivity(i)
             print(focus_button.isSelected)
         }
 

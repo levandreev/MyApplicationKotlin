@@ -145,8 +145,11 @@ class FocusActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_focus)
+        var timerOn = false
+        val intent = getIntent()
+        val block_duration = intent.getStringExtra("block_dur")
 
-        focus_button.setImageState(Activity.FOCUSED_STATE_SET, true)
+        countdown_text.setText(block_duration)
 
         meditation_button.setOnClickListener{
             startActivity(Intent(this@FocusActivity,MeditationActivity::class.java))
@@ -156,10 +159,29 @@ class FocusActivity : AppCompatActivity() {
             startActivity(Intent(this@FocusActivity,SPActivity::class.java))
         }
         countdown_button.setOnClickListener{
-            number_block_duration.text
-            Toast.makeText(this,number_block_duration.text,Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,countdown_text.text, Toast.LENGTH_SHORT).show()
+            val timer = object: CountDownTimer(block_duration.toLong() * 60000, 1000) {
+                override fun onTick(millisUntilFinished: Long) {
+                    countdown_text.text = ""
+                    min_sec_text.text = "" + millisUntilFinished/1000/60 + " min " + (millisUntilFinished/1000)%60+" s"
+                }
+                override fun onFinish() {
+                    countdown_text.text = "0"
+                    min_sec_text.text = ""
 
+                }
+            }
+
+            if (!timerOn){
+                timerOn = true;
+                timer.start()
+                countdown_button.setText("stop")
+            }
+            else {
+                timerOn = false;
+                timer.cancel()
+                countdown_button.setText("start")
+            }
         }
-
     }
 }
