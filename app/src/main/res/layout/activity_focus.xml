@@ -130,7 +130,8 @@
         android:layout_height="wrap_content"
         android:text="start"
         android:fontFamily="@font/earlygameboy"
-
+        android:background="#8BD55A"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.544"
