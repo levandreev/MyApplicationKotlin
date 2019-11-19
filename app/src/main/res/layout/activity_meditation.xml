@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/app_background_screen"
+    android:background="@drawable/white_background"
     tools:context=".SPActivity">
 
     <ProgressBar
@@ -34,7 +34,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/meditation_button"
         app:layout_constraintEnd_toEndOf="@+id/meditation_button"
-        app:srcCompat="@drawable/shieldicon" />
+        app:srcCompat="@drawable/sword8bit" />
 
     <ImageButton
         android:id="@+id/s_p_button"
@@ -46,7 +46,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/focus_button"
         app:layout_constraintEnd_toEndOf="@+id/focus_button"
-        app:srcCompat="@drawable/swordicon" />
+        app:srcCompat="@drawable/pencil8bit" />
 
     <ImageButton
         android:id="@+id/meditation_button"
@@ -59,7 +59,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/meditationicon" />
+        app:srcCompat="@drawable/yinyang8bit" />
 
     <ProgressBar
         android:id="@+id/progressBar2"
@@ -90,10 +90,10 @@
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintHorizontal_bias="0.088"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.109" />
+        app:layout_constraintVertical_bias="0.081" />
 
     <TextView
         android:id="@+id/text_lvl"
@@ -150,7 +150,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.501"
-        app:srcCompat="@drawable/scrollnew" />
+        app:srcCompat="@drawable/scroll8bit" />
 
     <TextView
         android:id="@+id/textView3"
@@ -158,7 +158,7 @@
         android:layout_height="124dp"
         android:fontFamily="@font/earlygameboy"
         android:text="The secret of getting ahead is getting started."
-        android:textColor="#EDF32D"
+        android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.753"
