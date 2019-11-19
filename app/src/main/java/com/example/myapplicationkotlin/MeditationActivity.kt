@@ -2,6 +2,7 @@ package com.example.myapplicationkotlin
 
 import android.app.Activity
 import android.content.Intent
+import android.graphics.Color
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -26,6 +27,7 @@ class MeditationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_meditation)
+        meditation_button.setBackgroundColor(Color.GREEN)
 
         meditation_button.setImageState(Activity.FOCUSED_STATE_SET, true)
 

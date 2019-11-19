@@ -2,6 +2,7 @@ package com.example.myapplicationkotlin
 
 import android.app.Activity
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -25,18 +26,21 @@ class SPActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_s_p)
-
+        s_p_button.setBackgroundColor(Color.GREEN)
 
         s_p_button.setImageState(Activity.FOCUSED_STATE_SET, true)
+
         focus_button.setOnClickListener{
             val i = Intent(this@SPActivity,FocusActivity::class.java)
             i.putExtra("block_dur",number_block_duration.text.toString())
             startActivity(i)
             print(focus_button.isSelected)
+        //    s_p_button.setBackgroundColor(Color.RED);
         }
 
         meditation_button.setOnClickListener{
             startActivity(Intent(this@SPActivity,MeditationActivity::class.java))
+        //    s_p_button.setBackgroundColor(Color.BLUE);
         }
 
         seekBar_duration.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {

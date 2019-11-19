@@ -2,6 +2,7 @@ package com.example.myapplicationkotlin
 
 import android.app.Activity
 import android.content.Intent
+import android.graphics.Color
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -145,6 +146,7 @@ class FocusActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_focus)
+        focus_button.setBackgroundColor(Color.GREEN)
         var timerOn = false
         val intent = getIntent()
         val block_duration = intent.getStringExtra("block_dur")
